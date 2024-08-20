@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="background-image"></div>
+    <!-- Background image with blur -->
+
+    <div class="falling-petals">
+      <div class="snowflake stuck-top-left">
+        <img src="hoadao.png" alt="Flower" />
+      </div>
+      <div class="snowflake"><img src="hoadao.png" alt="Flower" /></div>
+      <div class="snowflake"><img src="hoadao.png" alt="Flower" /></div>
+      <div class="snowflake"><img src="hoadao.png" alt="Flower" /></div>
+      <div class="snowflake"><img src="hoadao.png" alt="Flower" /></div>
+      <div class="snowflake"><img src="hoadao.png" alt="Flower" /></div>
+      <div class="snowflake"><img src="hoadao.png" alt="Flower" /></div>
+      <div class="snowflake"><img src="hoadao.png" alt="Flower" /></div>
+      <div class="snowflake"><img src="hoadao.png" alt="Flower" /></div>
+    </div>
+    <!-- Notification Modal HTML -->
+    <div class="notification-modal" id="notificationModal">
+      <div class="notification-content">
+        <h2>Welcome!</h2>
+        <p>Enjoy your experience on our website.</p>
+        <button id="closeNotification">Close</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card__img">
+        <img src="./1963c19091338f575f6dd62b88277751.jpg" alt="Profile" />
+      </div>
+      <h1>Thuy Duong</h1>
+      <p>xyanisbad<3</p>
+      <div class="card__diachi">
+        <a href="#"><i class="fa-solid fa-location-dot"></i></a>
+        <span class="address-text">Hà Nội, Việt Nam</span>
+      </div>
+      <div class="youtube">
+        <a href="link-to-follow">
+          <i class="fa-solid fa-heart"></i>Theo Dõi
+          <span class="count">700+</span>
+        </a>
+        <a href="link-to-like">
+          <i class="fa-solid fa-thumbs-up"></i> Lượt Thích
+          <span class="count">600+</span>
+        </a>
+      </div>
+      <div class="card__icon">
+        <a href="https://www.youtube.com/channel/UC73m4997Qxczy6ZMD2wS-SA"
+          ><i class="fa-brands fa-youtube"></i
+        ></a>
+        <a href="https://discord.gg/EzsEzSaa"
+          ><i class="fa-brands fa-discord"></i
+        ></a>
+        <a href=""><i class="fa-brands fa-tiktok"></i></a>
+      </div>
+      <div class="nut"><button id="playButton">Contact Me</button></div>
+    </div>
+
+    <audio id="myAudio">
+      <source
+        src="/y2mate.com - fukashigi no carte lofi hiphop bvyunx Bootleg  Rascal Does Not Dream of Bunny Girl Senpai.mp3"
+        type="audio/mpeg"
+      />
+      Your browser does not support the audio tag.
+    </audio>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var audio = document.getElementById("myAudio");
+
+        if (audio) {
+          document.body.addEventListener("mouseover", function () {
+            audio.play().catch(function (error) {
+              console.error("Playback failed:", error);
+            });
+          });
+        } else {
+          console.error("Audio element not found");
+        }
+      });
+    </script>
+  </body>
+</html>
